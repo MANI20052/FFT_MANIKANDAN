@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Event</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        .banner {
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+
+        .box {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+        }
+
+        button {
+            background-color: orange;
+            padding: 10px;
+            border: none;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Crypto Event 2026</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="banner" id="home">
+        <h1>Crypto Event 2026</h1>
+        <p>Learn About Cryptocurrency</p>
+        <p>Date: October 25, 2026</p>
+        <p>Venue: Bangalore</p>
+        <a href="#register">Register Now</a>
+    </div>
+
+    <div class="box">
+        <h2>About Event</h2>
+        <p>
+            This event is about cryptocurrency,
+            blockchain and digital money.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Event Details</h2>
+        <p>Date: October 25, 2026</p>
+        <p>Time: 9 AM to 6 PM</p>
+        <p>Place: Bangalore</p>
+    </div>
+
+    <div class="box" id="schedule">
+        <h2>Event Schedule</h2>
+
+        <table border="1" align="center">
+            <tr>
+                <th>Time</th>
+                <th>Program</th>
+            </tr>
+
+            <tr>
+                <td>9 AM</td>
+                <td>Registration</td>
+            </tr>
+
+            <tr>
+                <td>10 AM</td>
+                <td>Crypto Introduction</td>
+            </tr>
+
+            <tr>
+                <td>12 PM</td>
+                <td>Blockchain</td>
+            </tr>
+
+            <tr>
+                <td>2 PM</td>
+                <td>Web Development</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box" id="speakers">
+        <h2>Speakers</h2>
+
+        <h3>Rahul</h3>
+        <p>Blockchain Developer</p>
+
+        <h3>Priya</h3>
+        <p>Crypto Analyst</p>
+    </div>
+
+    <div class="box" id="register">
+        <h2>Registration</h2>
+
+        <form onsubmit="register(event)">
+            <input type="text" placeholder="Enter Name" required>
+            <br><br>
+
+            <input type="email" placeholder="Enter Email" required>
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="box" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: cryptoevent@gmail.com</p>
+        <p>Phone: 9876543210</p>
+    </div>
+
+    <footer>
+        <p>Crypto Event 2026</p>
+    </footer>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            alert("Registration successful");
+        }
+    </script>
+
+</body>
+</html>
